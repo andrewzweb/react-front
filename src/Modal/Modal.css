@@ -1,0 +1,33 @@
+.modal {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+    width: 400px;
+    border-radius: 5px;
+    background-color: orange;
+    color: #333;
+    height: 300px;
+           
+}
+
+.modal-body h1 {
+    color: #333;
+}
+
+.modalButton {
+    background: #444;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
