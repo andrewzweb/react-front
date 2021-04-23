@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import TodoItem from './TodoItem'
 
 
-function TodoList(props) {
+function TodoList({onToggle, todos}) {
   return (
     <ul>
-      { props.todos.map((todo, index, onChange) => {
+      { todos.map(( todo, index ) => {
         return <TodoItem
                  todo={todo}
                  index={index + 1}
                  key={todo.id}
-                 onChange={props.onToggle}
+                 onChange={onToggle}
                />
       })}
     </ul>
