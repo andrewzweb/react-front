@@ -19,7 +19,6 @@ function App() {
     fetch('https://jsonplaceholder.cypress.io/todos?_limit=5')
     .then(response => response.json())
     .then(todos => {
-      console.log(todos);
       setTimeout(() => {
         setTodos(todos)
         setLoading(false)
