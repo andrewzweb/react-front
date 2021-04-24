@@ -14,7 +14,9 @@ function TodoItem({todo, index, onChange}){
   return (
     <li >
       <span key={index} className={classes.join(' ')}>
-        <input className='custom-checkbox' type="checkbox"
+        <input className='custom-checkbox'
+               type="checkbox"
+               defaultChecked={ todo.completed ? 'cheked' : ''}
                onChange={() => onChange(todo.id)}/>
         <strong>{ index }</strong>
         { todo.title }
